@@ -18,4 +18,6 @@ Feature: Authorization
     Given I get to the login form
     When I enter existing user credentials
     Then I sign in the application
-
+    Then I click on the first item in homescreen
+    And add all visible items to wishlist
+    Then I go to wishlist

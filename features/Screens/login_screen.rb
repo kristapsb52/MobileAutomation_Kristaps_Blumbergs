@@ -22,4 +22,5 @@ class Login
   def login_button_click
     @login_button.click
   end
+
 end

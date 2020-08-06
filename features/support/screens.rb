@@ -10,4 +10,8 @@ class Screens
   def register_screen
     @register_screen = Register.new
   end
+
+  def product_screen
+    @product_screen = Products.new
+  end
 end
