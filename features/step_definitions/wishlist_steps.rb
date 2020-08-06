@@ -4,7 +4,8 @@ end
 
 And(/^add all visible items to wishlist$/) do
   @screens.product_screen.wishlist_icon_click
-  Appium::TouchAction.new.swipe(start_x: 536, start_y: 1361, end_x: 536, end_y: 482, duration: 600).perform
+  @itemText = @screens.product_screen.wishlist_items
+  puts p @itemText
 
 end
 
@@ -14,5 +15,8 @@ Then(/^I go to wishlist$/) do
 end
 
 And(/^validate if all the items were added to wishlist$/) do
-  pending
+  test = @screens.product_screen.wishlist_items
+  p test
+  p "I cry"
+
 end
