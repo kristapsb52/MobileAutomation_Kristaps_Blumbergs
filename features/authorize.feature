@@ -14,6 +14,7 @@ Feature: Authorization
     When I enter existing user credentials
     Then I sign in the application
 
+  @run
   Scenario: As a user I can view liked items in my wishlist
     Given I get to the login form
     When I enter existing user credentials
@@ -21,3 +22,4 @@ Feature: Authorization
     Then I click on the first item in homescreen
     And add all visible items to wishlist
     Then I go to wishlist
+    And validate if all the items were added to wishlist
